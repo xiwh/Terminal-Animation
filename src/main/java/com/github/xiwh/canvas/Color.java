@@ -43,6 +43,10 @@ public class Color {
         return b;
     }
 
+    public int get256Color(){
+        return to256Color(rgb);
+    }
+
     public static int to256Color(int rgb){
         int r = rgb >> 16;
         int g = (rgb >> 8) & 0xff;
